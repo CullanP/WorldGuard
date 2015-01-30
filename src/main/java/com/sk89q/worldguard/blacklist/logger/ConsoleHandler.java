@@ -19,7 +19,6 @@
 
 package com.sk89q.worldguard.blacklist.logger;
 
-import com.sk89q.worldedit.blocks.ItemType;
 import com.sk89q.worldguard.blacklist.event.BlacklistEvent;
 
 import java.util.logging.Level;
