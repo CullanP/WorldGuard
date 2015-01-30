@@ -41,21 +41,6 @@ public class ConsoleHandler implements LoggerHandler {
                 (comment != null ? " (" + comment + ")" : ""));
     }
 
-    /**
-     * Get an item's friendly name with its ID.
-     *
-     * @param id The item id
-     * @return The friendly name of the item
-     */
-    private static String getFriendlyItemName(int id) {
-        ItemType type = ItemType.fromID(id);
-        if (type != null) {
-            return type.getName() + " (#" + id + ")";
-        } else {
-            return "#" + id;
-        }
-    }
-
     @Override
     public void close() {
     }
