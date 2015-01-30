@@ -152,7 +152,6 @@ public abstract class Blacklist {
                 } else if (line.charAt(0) == ';' || line.charAt(0) == '#') {
                     continue;
                 }
-
                 if (line.matches("^\\[.*\\]$")) {
                     String[] items = line.substring(1, line.length() - 1).split(",");
                     currentEntries = new ArrayList<BlacklistEntry>();
