@@ -20,7 +20,6 @@
 package com.sk89q.worldguard.blacklist.logger;
 
 import com.sk89q.worldedit.Vector;
-import com.sk89q.worldedit.blocks.ItemType;
 import com.sk89q.worldguard.LocalPlayer;
 import com.sk89q.worldguard.blacklist.event.BlacklistEvent;
 import com.sk89q.worldguard.blacklist.target.Target;
