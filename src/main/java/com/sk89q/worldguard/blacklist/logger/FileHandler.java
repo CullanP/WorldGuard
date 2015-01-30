@@ -231,21 +231,6 @@ public class FileHandler implements LoggerHandler {
         logEvent(event, event.getDescription(), event.getTarget(), event.getPosition(), comment);
     }
 
-    /**
-     * Get an item's friendly name with its ID.
-     *
-     * @param id The id to get a friendly name for
-     * @return The friendly name
-     */
-    private static String getFriendlyItemName(int id) {
-        ItemType type = ItemType.fromID(id);
-        if (type != null) {
-            return type.getName() + " (#" + id + ")";
-        } else {
-            return "#" + id + "";
-        }
-    }
-
     @Override
     public void close() {
         for (Map.Entry<String,LogFileWriter> entry : writers.entrySet()) {
