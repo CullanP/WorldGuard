@@ -22,6 +22,8 @@ package com.sk89q.worldguard.blacklist.target;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 public class TargetMatcherParseException extends Exception {
+    
+    private static final long serialVersionUID = 1L;
 
     public TargetMatcherParseException(String message) {
         super(checkNotNull(message));
