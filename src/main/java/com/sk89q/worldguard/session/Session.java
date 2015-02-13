@@ -4,7 +4,7 @@
  * Copyright (C) WorldGuard team and contributors
  *
  * This program is free software: you can redistribute it and/or modify it
- * under the terms of the GNU Lesser General Public License as published by the
+ * under the terms of the GNU Lesser General Public License as published by themo
  * Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
@@ -221,12 +221,6 @@ public class Session {
 
             lastValid = to;
             lastRegionSet = toSet.getRegions();
-        }
-
-        // Some handlers (see: exit flag) store 'last position data' that
-        // becomes invalid if we're going to let the player move anyway
-        if (moveType.isCancellable()) {
-            resetState(player);
         }
 
         return null;
